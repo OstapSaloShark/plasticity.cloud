@@ -1,0 +1,132 @@
+@import '../../styles/variables.scss';
+
+.our-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 !important;
+  margin-bottom: 120px !important;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    gap: 24px
+  }
+
+  &__first,
+  &__second,
+  &__third,
+  &__fourth {
+    border-radius: 30px;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+  }
+
+  &__second,
+  &__first {
+    height: 320px;
+  }
+
+  &__third,
+  &__fourth {
+    height: 480px;
+  }
+
+  &__second,
+  &__third {
+    background-color: $grey-2-color;
+  }
+
+  &__second,
+  &__third,
+  &__fourth {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__first {
+    background-color: $accent-color;
+  }
+
+  &__fourth {
+    background-color: $button-color;
+
+    color: #ffffff
+  }
+
+  &__third {
+    position: relative;;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 40px !important;
+      
+    &__list li div {
+      padding: 24px;
+    }
+
+    &__list,
+    &__item {
+      gap: 16px;
+    }
+
+    .our-service__second,
+    .our-service__first {
+      height: 240px;
+    }
+
+    .our-service__third,
+    .our-service__fourth {
+      height: 320px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px !important;
+    
+    &__circle {
+      width: 42px;
+      height: 42px;
+    }
+    &__item {
+      flex-direction: column;
+    }
+
+    &__item:last-child {
+      flex-direction: column-reverse;
+    }
+
+    &__list li div {
+      padding: 16px;
+    }
+
+    .our-service__second,
+    .our-service__first {
+      height: 160px;
+    }
+
+    .our-service__third,
+    .our-service__fourth {
+      height: 220px;
+    }
+    
+
+    &__first,
+    &__second,
+    &__third,
+    &__fourth {
+      border-radius: 24px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 0px !important;
+  }
+}

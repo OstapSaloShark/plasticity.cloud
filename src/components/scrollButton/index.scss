@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss';
+
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+
+  border: 2px solid $button-color;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-color;
+  transition: all 0.5s;
+
+  &:hover {
+    border-color: $accent-color;
+
+    & svg path {
+      fill: $accent-color;
+    }
+  }
+
+  &:active {
+    background-color: $grey-2-color;
+    border-color: $button-color;
+
+    & svg path {
+      fill: $button-color;
+    }
+  }
+
+  @media screen and (max-width: 1028px) {
+    width: 48px;
+    height: 48px;
+
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 36px;
+    height: 36px;
+
+    & svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  @media screen and (min-width: 2400px) {
+    left: calc(50vw - 800px);
+  }
+}

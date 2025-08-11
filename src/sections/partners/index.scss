@@ -1,0 +1,123 @@
+@import '../../styles/variables.scss';
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 60px 20px !important;
+  margin-bottom: 120px !important;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+
+  &__first {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 32px;
+    background-color: $accent-color;
+    border-radius: 30px;
+    height: 320px;
+  }
+
+  &__other {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 32px;
+    border-radius: 30px;
+    background: $grey-2-color;
+
+    & > h1,
+    & > h5 {
+      width: 100%;
+      text-align: left;
+    }
+
+    &--first {
+      height: 394px;
+    }
+
+    &--second {
+      height: 247px;
+
+      margin-top: -147px;
+    } 
+
+    &--third {
+      height: 303px;
+    }
+
+    &--fourth {
+      height: 450px;
+      margin-top: -147px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 40px !important;
+
+    & > div,
+    & > ul > li {
+      padding: 24px;
+    }
+    &__row {
+      gap: 16px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px !important;
+    
+    & > div,
+    & > ul > li {
+      padding: 16px;
+    }
+
+    &__row {
+      flex-direction: column;
+    }
+
+    &__first {
+      height: 220px;
+      border-radius: 24px;
+    }
+
+    &__other {
+      border-radius: 24px;
+      
+      &--first,
+      &--second,
+      &--third,
+      &--fourth {
+        height: 280px;
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      &--second {
+        margin-top: 0;
+        background-color: $button-color;
+        color: #ffffff;
+      } 
+
+      &--fourth {
+        margin-top: 0;
+        background-color: $accent-color;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 0px !important;
+  }
+}

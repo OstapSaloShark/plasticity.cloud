@@ -1,0 +1,84 @@
+@import '../../styles/variables.scss';
+
+.btn {
+  cursor: pointer;
+
+  &--secondary {
+    color: $bg-color;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid $accent-color;
+      color: $accent-color !important;
+    }
+
+    &:active {
+      border-bottom: 1px solid $button-color;
+      color: $button-color !important;
+    }
+  }
+
+  &--primary {
+    display: inline-flex;
+    height: 54px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+
+    color: $bg-color;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &:hover {
+      color: $accent-color;
+      border-color: $accent-color;
+      background-color: transparent;
+
+      & > span {
+        background-color: $accent-color;
+
+        svg path {
+          fill: $bg-color;
+        }
+      }
+    }
+
+    &:active {
+      color: #000000;
+      border-color: #000000;
+      background-color: transparent;
+
+      & > span {
+        background-color: #000000;;
+
+        svg path {
+          fill: $bg-color;
+        }
+      }
+    }
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
