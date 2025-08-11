@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/plasticity.cloud/static/css/main.9cb0f90f.css",
+    "main.js": "/plasticity.cloud/static/js/main.277e2f95.js",
+    "static/js/453.4c03fcd1.chunk.js": "/plasticity.cloud/static/js/453.4c03fcd1.chunk.js",
+    "static/media/heroBg.png": "/plasticity.cloud/static/media/heroBg.c09446ee8724fefbce24.png",
+    "static/media/heroBg2.png": "/plasticity.cloud/static/media/heroBg2.306da6885f680a75b4f3.png",
+    "static/media/solutions1.jpg": "/plasticity.cloud/static/media/solutions1.5fbc07769a4c6a8bc73c.jpg",
+    "static/media/solutions3.jpg": "/plasticity.cloud/static/media/solutions3.45376425ae15a677df57.jpg",
+    "static/media/solutions2.jpg": "/plasticity.cloud/static/media/solutions2.2409eb33a0013a50bc35.jpg",
+    "index.html": "/plasticity.cloud/index.html",
+    "main.9cb0f90f.css.map": "/plasticity.cloud/static/css/main.9cb0f90f.css.map",
+    "main.277e2f95.js.map": "/plasticity.cloud/static/js/main.277e2f95.js.map",
+    "453.4c03fcd1.chunk.js.map": "/plasticity.cloud/static/js/453.4c03fcd1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cb0f90f.css",
+    "static/js/main.277e2f95.js"
+  ]
+}
